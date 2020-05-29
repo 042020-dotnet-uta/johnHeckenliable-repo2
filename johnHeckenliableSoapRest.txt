@@ -1,0 +1,108 @@
+
+--SOAP Questions--
+
+Which of the below is NOT part of the WSDL file:
+* TargetNamespace
+* Porttype
+* End Point (CORRECT)
+* Definition
+
+What is a benefit of using SOAP?
+* It is designed to be platform independent (CORRECT)
+* Each request must be atomic.
+* Only stores and transports data in plain text format.
+* The envelope changes when SOAP versions change.
+
+Which is an attribute of a SOAP message?
+* mustUnderstand (Correct)
+* encoding
+* mustComprehend
+* user
+
+What is the <Header> element used for?
+* It is used to pass application-related information that is to be processed by SOAP nodes along the message path (CORRECT)
+* contains the data being sent. 
+* is the Root element and contains all other parts. 
+* encapsulates all the other elements.
+
+What is the <faultActor> used for?
+* Gives application-specific error messages
+* This is a text string which indicates who caused the fault. (CORRECT)
+* Indicates a version mismatch fault
+* Used to indicate the end of a fault message
+
+--REST Questions--
+
+Why is Cacheable a REST Architectural Constraint?
+* Servers and clients may also be replaced and developed independently
+* Well-managed caching partially or completely eliminates some client-server interactions (CORRECT)
+* Allows you to use a layered system architecture
+* Allows every call to be atomic
+
+What status code is returned If the method does some processing but does not create a new resource
+* 304
+* 201
+* 200 (CORRECT)
+* 500
+
+What happens in a PATCH request?
+* the client sends a set of updates to an existing resource, in the form of a patch definition
+* the server implements bulk HTTP PUT operations
+* The server returns fault code 404
+* the client sends a set of updates to an existing resource, in the form of a patch document (CORRECT)
+
+What does the fetch() method return?
+* A string
+* A Promise (CORRECT)
+* A Request
+* Null
+
+What is the base class for HTTPClient in .NET?
+* System.Http.MessageInvoker
+* System.Net.Http.HttpMessageInvoker (CORRECT)
+* System.Net.Http.HttpContent
+* System. SocketsHttpHandler
+
+
+SOAP and REST a quick overview of why they exist:
+
+SOAP – The main idea behind designing SOAP was to ensure that programs built on different platforms and programming languages could exchange data in an easy manner.
+
+REST - Was designed specifically for working with components such as media components, files, or even objects on a particular hardware device. Any web service that is defined on the principles of REST can be called a RestFul web service. 
+
+SOAP and REST a few key differences:
+
+The main difference between SOAP and REST is that one is a transfer protocol and one is an architectural pattern. Any web service can use SOAP as its transfer protocol and, any web service can be “RESTful” by following the REST constraints.
+
+SOAP uses service interfaces to expose its functionality to client applications. In SOAP, the WSDL file provides the client with the necessary information which can be used to understand what services the web service can offer.
+
+REST uses Uniform Service Locators (URL) to access to the components on the hardware device. 
+
+Reasons to use SOAP
+
+A Formal means of communication – if both the client and server have an agreement on the exchange format then SOAP 1.2 gives the rigid specifications for this type of interaction. An example is an online purchasing site in which users add items to a cart before the payment is made.
+
+Stateful operations – if the application has a requirement that state needs to be maintained from one request to another, then the SOAP 1.2 standard provides the WS* structure to support such requirements.
+
+Reasons to use REST
+
+Limited resources and bandwidth – Since SOAP messages are heavier in content and consume a far greater bandwidth, REST should be used in instances where network bandwidth is a constraint.
+Statelessness – If there is no need to maintain a state of information from one request to another then REST should be used. If you need a proper information flow wherein some information from one request needs to flow into another then SOAP is more suited for that purpose. 
+
+Caching – If there is a need to cache a lot of requests then REST is the perfect solution. At times, clients could request for the same resource multiple times. This can increase the number of requests which are sent to the server. By implementing a cache, the most frequent queries results can be stored in an intermediate location. So whenever the client requests for a resource, it will first check the cache. If the resources exist then, it will not proceed to the server. So caching can help in minimizing the amount of trips which are made to the web server.
+Challenges to using SOAP API
+
+WSDL file - One of the key challenges of the SOAP API is the WSDL document itself. The WSDL document is what tells the client of all the operations that can be performed by the web service. The WSDL document will contain all information such as the data types being used in the SOAP messages and what all operations are available via the web service.
+
+Document size – The other key challenge is the size of the SOAP messages which get transferred from the client to the server. Because of the large messages, using SOAP in places where bandwidth is a constraint can be a big issue.
+
+Challenges to using REST
+
+Lack of Security – REST does not impose any sort of security like SOAP. This is why REST is very appropriate for public available URL's, but when it comes down to confidential data being passed between the client and the server.
+
+Lack of state – Most web applications require a stateful mechanism. For example, if you had a purchasing site which had the mechanism of having a shopping cart, it is required to know the number of items in the shopping cart before the actual purchase is made. Unfortunately, the burden of maintaining this state lies with the client, which just makes the client application heavier and difficult to maintain.
+
+SOAP Vs. REST: Difference between Web API Services. Retrieved May 26th 2020, from
+https://www.guru99.com/comparison-between-web-services.html
+
+
