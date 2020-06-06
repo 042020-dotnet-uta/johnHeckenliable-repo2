@@ -1,0 +1,61 @@
+
+https://kubernetes.io/docs/concepts/services-networking/ingress/
+--Question #1-- 
+What is Ingress?
+* A router that enforces the firewall policy for your cluster.
+* Ingress exposes HTTP and HTTPS routes from outside the cluster to services within the cluster (CORRECT)
+*  A set of links, logical or physical, that facilitate communication within a cluster
+* Ingress exposes HTTP and HTTPS routes from within the cluster to services outside of the cluster
+
+https://kubernetes.io/docs/concepts/services-networking/ingress/
+--Question #2-- 
+Which is a Minikube addon?
+* storage-providor
+* expose deployment
+* nvidia-driver-installer (CORRECT)
+* kubectl config view
+
+https://kubernetes.io/docs/concepts/services-networking/ingress/
+--Question #3-- 
+How do you delete the MiniKube VM?
+* kubectl delete service
+* minikube delete (CORRECT)
+* dashboard delete
+* minikube stop
+
+https://docs.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-cluster#install-the-kubernetes-cli
+--Question #4-- 
+Which is valid in the az aks create command
+* --grant
+* --remove
+* --node
+* --resource-group (CORRECT)
+
+https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/
+--Question #5--
+What is a PersistentVolumeClaim (PVC)?
+* a request for storage by a user that can be fulfilled by a PV (CORRECT)
+* a request to dynamically provision storage
+* a piece of storage in the cluster that has been manually provisioned
+* a piece of storage dynamically provisioned by Kubernetes 
+
+https://www.digitalocean.com/community/tutorials/webinar-series-a-closer-look-at-kubernetes
+--Question #6--
+How do you use kubectl to submit your pod to the cluster via a YAML file?
+* kubectl make
+* kubectl create -f [fileName].yml (CORRECT)
+* kubectl get -f [fileName].yml
+* kubectl add -f [fileName].yml
+
+https://cloud.google.com/kubernetes-engine/kubernetes-comic/
+--Question #7--
+How do you scale up a deployment on Google Cloud?
+* kubectl scale --replicas 3
+* kubectl deploy app --replicas 3
+* kubectl app --replicas 3
+* kubectl scale deployment app --replicas [n] (CORRECT)
+
+
+
+
+
